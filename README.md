@@ -11,7 +11,7 @@ python scaffold.py
 ## Steps
 
 - [x] **1.** impute_nan_with_mean
-- [ ] **2.** compute_iqr_bounds
+- [x] **2.** compute_iqr_bounds
 - [ ] **3.** clip_columns
 - [ ] **4.** make_ratio_feature
 - [ ] **5.** append_column
