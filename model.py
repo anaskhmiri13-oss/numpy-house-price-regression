@@ -146,8 +146,17 @@ def ols_fit(X, y):
     theta = np.linalg.lstsq(X, y, rcond=None)[0]
     return theta
 
-# Step 14 - ols_predict (not yet solved)
-# TODO: implement
+# Step 14 - ols_predict
+def ols_predict(X, theta):
+    c=[]
+    for i in range(len(X)) :
+        s=0
+        for j in range(len(theta)): 
+            s=X[i][j]*theta[j]+s
+        c.append(s)
+    
+    r=np.array(c)
+    return r
 
 # Step 15 - mean_absolute_error (not yet solved)
 # TODO: implement
