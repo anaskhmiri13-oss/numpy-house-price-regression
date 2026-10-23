@@ -70,8 +70,13 @@ def make_ratio_feature(numerator, denominator, eps=1e-8):
     a = np.array(c)
     return a
 
-# Step 5 - append_column (not yet solved)
-# TODO: implement
+# Step 5 - append_column
+def append_column(X, col):
+    B = X.tolist()
+    for i in range(len(B)): 
+        B[i].append(col[i])
+    a=np.array(B)
+    return a
 
 # Step 6 - one_hot_encode (not yet solved)
 # TODO: implement
