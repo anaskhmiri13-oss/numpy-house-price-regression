@@ -98,8 +98,15 @@ def fit_standardizer(X):
             std[i]=1.0 
     return m,std
 
-# Step 8 - apply_standardizer (not yet solved)
-# TODO: implement
+# Step 8 - apply_standardizer
+def apply_standardizer(X, mean, std):
+    b=[] 
+    a=X.tolist()
+    for row in a : 
+        res= (row- mean)/std 
+        b.append(res)
+    x=np.array(b)
+    return x
 
 # Step 9 - add_bias_column (not yet solved)
 # TODO: implement
