@@ -164,8 +164,11 @@ def mean_absolute_error(y_true, y_pred):
     mae=mean_absolute_error(y_true,y_pred)
     return mae
 
-# Step 16 - root_mean_squared_error (not yet solved)
-# TODO: implement
+# Step 16 - root_mean_squared_error
+def root_mean_squared_error(y_true, y_pred):
+    from sklearn.metrics import mean_squared_error
+    rmse=np.sqrt(mean_squared_error(y_true,y_pred))
+    return rmse
 
 # Step 17 - r_squared (not yet solved)
 # TODO: implement
