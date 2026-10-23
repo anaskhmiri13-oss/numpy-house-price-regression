@@ -135,16 +135,11 @@ def partition_indices(indices, train_ratio, val_ratio):
 
 # Step 12 - subset_xy
 def subset_xy(X, y, indices):
-    X_s=[]
-    y_s=[]
-    for i in indices :
-        res=X[i]
-        res1=y[i]
-        X_s.append(res)
-        y_s.append(res1)
-    X_sub=np.array(X_s)
-    y_sub=np.array(y_s)
-    return X_sub,y_sub
+
+    X_sub = X[indices]
+    y_sub = y[indices]
+
+    return X_sub, y_sub
 
 # Step 13 - ols_fit (not yet solved)
 # TODO: implement
