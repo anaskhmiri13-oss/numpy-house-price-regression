@@ -170,8 +170,16 @@ def root_mean_squared_error(y_true, y_pred):
     rmse=np.sqrt(mean_squared_error(y_true,y_pred))
     return rmse
 
-# Step 17 - r_squared (not yet solved)
-# TODO: implement
+# Step 17 - r_squared
+def r_squared(y_true, y_pred):
+    from sklearn.metrics import r2_score
+    
+    if np.sum((y_true - np.mean(y_true))**2)==0 :
+        return 0.0 
+    else : 
+        r=r2_score(y_true,y_pred)
+
+    return r
 
 # Step 18 - residual_summary (not yet solved)
 # TODO: implement
