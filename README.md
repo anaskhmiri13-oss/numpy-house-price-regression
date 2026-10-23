@@ -19,7 +19,7 @@ python scaffold.py
 - [x] **7.** fit_standardizer
 - [x] **8.** apply_standardizer
 - [x] **9.** add_bias_column
-- [ ] **10.** make_shuffled_indices
+- [x] **10.** make_shuffled_indices
 - [ ] **11.** partition_indices
 - [ ] **12.** subset_xy
 - [ ] **13.** ols_fit
