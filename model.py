@@ -108,8 +108,13 @@ def apply_standardizer(X, mean, std):
     x=np.array(b)
     return x
 
-# Step 9 - add_bias_column (not yet solved)
-# TODO: implement
+# Step 9 - add_bias_column
+def add_bias_column(X):
+    A=X.tolist() 
+    for row in A: 
+        row.insert(0,1.0)
+    X=np.array(A)
+    return X
 
 # Step 10 - make_shuffled_indices (not yet solved)
 # TODO: implement

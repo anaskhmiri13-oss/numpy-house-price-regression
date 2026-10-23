@@ -18,7 +18,7 @@ python scaffold.py
 - [x] **6.** one_hot_encode
 - [x] **7.** fit_standardizer
 - [x] **8.** apply_standardizer
-- [ ] **9.** add_bias_column
+- [x] **9.** add_bias_column
 - [ ] **10.** make_shuffled_indices
 - [ ] **11.** partition_indices
 - [ ] **12.** subset_xy
