@@ -24,7 +24,7 @@ python scaffold.py
 - [x] **12.** subset_xy
 - [x] **13.** ols_fit
 - [x] **14.** ols_predict
-- [ ] **15.** mean_absolute_error
+- [x] **15.** mean_absolute_error
 - [ ] **16.** root_mean_squared_error
 - [ ] **17.** r_squared
 - [ ] **18.** residual_summary

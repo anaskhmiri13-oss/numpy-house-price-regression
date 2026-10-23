@@ -158,8 +158,11 @@ def ols_predict(X, theta):
     r=np.array(c)
     return r
 
-# Step 15 - mean_absolute_error (not yet solved)
-# TODO: implement
+# Step 15 - mean_absolute_error
+def mean_absolute_error(y_true, y_pred):
+    from sklearn.metrics import mean_absolute_error
+    mae=mean_absolute_error(y_true,y_pred)
+    return mae
 
 # Step 16 - root_mean_squared_error (not yet solved)
 # TODO: implement
