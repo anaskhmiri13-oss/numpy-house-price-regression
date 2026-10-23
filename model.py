@@ -85,10 +85,7 @@ def one_hot_encode(labels):
     B=[[0 for _ in range(len(A))]for _ in range(len(X))]
     for i in range(len(X)): 
         pos=A.index(X[i])
-        if pos == 0 : 
-            B[i][0]=1.0
-        else : 
-            B[i][pos]=1.0
+        B[i][pos]=1.0
     k=np.array(B)
     return k
 
