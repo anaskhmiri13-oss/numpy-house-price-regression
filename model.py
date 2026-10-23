@@ -96,9 +96,7 @@ def fit_standardizer(X):
     for i in range(len(std)) : 
         if std[i]== 0.0 : 
             std[i]=1.0 
-    
-    t=(m,std)
-    return t
+    return m,std
 
 # Step 8 - apply_standardizer (not yet solved)
 # TODO: implement
