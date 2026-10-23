@@ -13,7 +13,7 @@ python scaffold.py
 - [x] **1.** impute_nan_with_mean
 - [x] **2.** compute_iqr_bounds
 - [x] **3.** clip_columns
-- [ ] **4.** make_ratio_feature
+- [x] **4.** make_ratio_feature
 - [ ] **5.** append_column
 - [ ] **6.** one_hot_encode
 - [ ] **7.** fit_standardizer

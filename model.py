@@ -58,8 +58,17 @@ def clip_columns(X, lower, upper):
                 X1[i][j]= upper[j] 
     return (X1)
 
-# Step 4 - make_ratio_feature (not yet solved)
-# TODO: implement
+# Step 4 - make_ratio_feature
+def make_ratio_feature(numerator, denominator, eps=1e-8):
+    c=[]
+    for i in range(len(numerator)): 
+        if denominator[i]== 0.0 : 
+            res = numerator[i]/eps
+        else : 
+            res =numerator[i]/(denominator[i]+eps)
+        c.append(res)
+    a = np.array(c)
+    return a
 
 # Step 5 - append_column (not yet solved)
 # TODO: implement
