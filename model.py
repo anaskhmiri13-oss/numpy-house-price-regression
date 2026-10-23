@@ -78,8 +78,19 @@ def append_column(X, col):
     a=np.array(B)
     return a
 
-# Step 6 - one_hot_encode (not yet solved)
-# TODO: implement
+# Step 6 - one_hot_encode
+def one_hot_encode(labels):
+    X=labels.tolist()
+    A=sorted(set(X))
+    B=[[0 for _ in range(len(A))]for _ in range(len(X))]
+    for i in range(len(X)): 
+        pos=A.index(X[i])
+        if pos == 0 : 
+            B[i][0]=1.0
+        else : 
+            B[i][pos]=1.0
+    k=np.array(B)
+    return k
 
 # Step 7 - fit_standardizer (not yet solved)
 # TODO: implement
