@@ -16,7 +16,7 @@ python scaffold.py
 - [x] **4.** make_ratio_feature
 - [x] **5.** append_column
 - [x] **6.** one_hot_encode
-- [ ] **7.** fit_standardizer
+- [x] **7.** fit_standardizer
 - [ ] **8.** apply_standardizer
 - [ ] **9.** add_bias_column
 - [ ] **10.** make_shuffled_indices
