@@ -22,7 +22,7 @@ python scaffold.py
 - [x] **10.** make_shuffled_indices
 - [x] **11.** partition_indices
 - [x] **12.** subset_xy
-- [ ] **13.** ols_fit
+- [x] **13.** ols_fit
 - [ ] **14.** ols_predict
 - [ ] **15.** mean_absolute_error
 - [ ] **16.** root_mean_squared_error
