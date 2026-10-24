@@ -33,7 +33,7 @@ python scaffold.py
 - [x] **21.** make_train_val_test
 - [x] **22.** standardize_and_add_bias
 - [x] **23.** evaluate_predictions
-- [ ] **24.** house_price_pipeline
+- [x] **24.** house_price_pipeline
 
 ---
 
