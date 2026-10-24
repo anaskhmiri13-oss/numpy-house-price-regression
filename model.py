@@ -118,10 +118,9 @@ def add_bias_column(X):
 
 # Step 10 - make_shuffled_indices
 def make_shuffled_indices(n_samples, seed):
-    rng = np.random.default_rng(seed)
-    A=np.arange(n_samples)
-    B=rng.permutation(A)
-
+    rng = np.random.RandomState(seed)
+    A = np.arange(n_samples)
+    B = rng.permutation(A)
     return B
 
 # Step 11 - partition_indices
@@ -216,8 +215,26 @@ def assemble_feature_matrix(X_num, ratio_num_idx, ratio_den_idx, cat_labels=None
 
     return X_extended
 
-# Step 21 - make_train_val_test (not yet solved)
-# TODO: implement
+# Step 21 - make_train_val_test
+def make_train_val_test(X, y, train_ratio, val_ratio, seed):
+    indices = make_shuffled_indices(len(X), seed)
+
+    train_idx, val_idx, test_idx = partition_indices(
+        indices, train_ratio, val_ratio
+    )
+
+    X_train, y_train = subset_xy(X, y, train_idx)
+    X_val, y_val = subset_xy(X, y, val_idx)
+    X_test, y_test = subset_xy(X, y, test_idx)
+
+    return {
+        "X_train": X_train,
+        "y_train": y_train,
+        "X_val": X_val,
+        "y_val": y_val,
+        "X_test": X_test,
+        "y_test": y_test
+    }
 
 # Step 22 - standardize_and_add_bias (not yet solved)
 # TODO: implement
