@@ -29,7 +29,7 @@ python scaffold.py
 - [x] **17.** r_squared
 - [x] **18.** residual_summary
 - [x] **19.** prepare_cleaned_features
-- [ ] **20.** assemble_feature_matrix
+- [x] **20.** assemble_feature_matrix
 - [ ] **21.** make_train_val_test
 - [ ] **22.** standardize_and_add_bias
 - [ ] **23.** evaluate_predictions

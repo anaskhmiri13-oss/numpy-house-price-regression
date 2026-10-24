@@ -200,8 +200,21 @@ def prepare_cleaned_features(X, iqr_k=1.5):
     X=clip_columns(X,lower,upper)
     return X
 
-# Step 20 - assemble_feature_matrix (not yet solved)
-# TODO: implement
+# Step 20 - assemble_feature_matrix
+import numpy as np
+
+def assemble_feature_matrix(X_num, ratio_num_idx, ratio_den_idx, cat_labels=None):
+    numerator = X_num[:, ratio_num_idx]
+    denominator = X_num[:, ratio_den_idx]
+
+    ratio = make_ratio_feature(numerator, denominator, eps=1e-8)
+    X_extended = append_column(X_num, ratio)
+
+    if cat_labels is not None:
+        encoded = one_hot_encode(cat_labels)
+        X_extended = np.hstack((X_extended, encoded))
+
+    return X_extended
 
 # Step 21 - make_train_val_test (not yet solved)
 # TODO: implement
