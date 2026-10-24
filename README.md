@@ -28,7 +28,7 @@ python scaffold.py
 - [x] **16.** root_mean_squared_error
 - [x] **17.** r_squared
 - [x] **18.** residual_summary
-- [ ] **19.** prepare_cleaned_features
+- [x] **19.** prepare_cleaned_features
 - [ ] **20.** assemble_feature_matrix
 - [ ] **21.** make_train_val_test
 - [ ] **22.** standardize_and_add_bias
